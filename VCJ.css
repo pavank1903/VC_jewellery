@@ -1,0 +1,185 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf5e6;
+        }
+
+        header {
+            background-color: #d4af37;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 200px;
+            position: relative;
+            /* justify-content: center; */
+        }
+        .typewriter{
+            font-family: 'Noto Sans Telugu', sans-serif; /* Use a Telugu font */
+            font-size: 3rem;
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hides the text overflow during the animation */
+            border-right: 4px solid black; /* Simulates the typing cursor */
+            animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Typewriting effect and blinking cursor */
+
+        }
+        /* Keyframes for the typewriting effect */
+        @keyframes typing {
+            from {
+                 width: 0;
+            }   
+            to {
+                  width: 65%;
+            }
+        }
+        /* Keyframes for the blinking cursor */
+        @keyframes blink {
+          50% {
+              border-color: transparent;
+             }
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif; /* Stylish and elegant font */
+            font-size: 4rem; /* Large font size */
+            color: #333; /* Dark gray for contrast */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0.2, 0.2); /* Adds a subtle shadow effect */
+            margin-left: 20px;
+            position: relative;
+            transition: all 0.5s ease; /* Smooth transition effect */
+
+        }
+
+        
+        header img {
+            /* padding: 20px; */
+            width: 150px;
+            height: 100px;
+            border-radius: 0 35px 0 35px;
+            transition: all 0.5s ease; /* Smooth transition effect */
+            position:static;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f8f1d4;
+            padding: 0px;
+        }
+        .name{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #d4af37;
+            margin-right: 20px;
+        }
+        nav a {
+            size: 0caps;
+            margin: 0 25px;
+            text-decoration: none;
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: rgb(173, 128, 55);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .product-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .ring{
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .ring:hover{
+            transform: scale(1.05);
+            background-color: #f8f1d4;
+        }
+
+        .chain{
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .chain:hover{
+            transform: scale(1.05);
+            background-color: #f8f1d4;
+        }
+        .B{
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .B:hover{
+            transform: scale(1.05);
+            background-color: #464025;
+        }
+
+        .Bracelet{
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .Bracelet:hover{
+            transform: scale(1.05);
+            background-color: #f8f1d4;
+        }
+
+        .product img {
+            aspect-ratio: 1/2;
+            width: 400px;
+            height: 350px;
+        }
+
+        .product h3 {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #e1c555;
+            margin: 0;
+        }
+
+        .product p {
+            padding: 0 10px;
+        }
+
+        button{
+            background-color: #d4af37;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #d4af37;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+       

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Store</title>
+    <link rel="stylesheet" href="VCJ.css">
+</head>
+<body>
+    <header>
+        <img src="vcj.png" alt="Chakrapani Jewellery" class="logo">
+        <h1 class="typewriter">WELCOME To చక్రపాణి జ్యువెలరీ వర్క్స్</h1>
+
+    </header>
+    <nav>
+        <!-- <div class="name"><h4>CHAKRAPANI Jewellery WORKS</h4></div> -->
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h1>Find Your Perfect Ornaments</h1>
+        <p>Explore our exquisite collection of fine jewellery.</p>
+    </section>
+    <section id="products" class="product-gallery">
+        <div class="product">
+            <div class="ring" onclick="openringGallery()">
+                 <img src="ring.webp" alt="Gold Ring">
+                <h3>Gold Ring</h3>
+                <p>Elegant gold ring with a modern design.</p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="chain" onclick="openchainGallery()">
+                <img src="chain.jpg" alt="Diamond Necklace">
+                <h3>Diamond Necklace</h3>
+                <p>Stunning necklace with sparkling diamonds.</p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="Bracelet" onclick="openBraceletGallery()">
+                <img src="bracelite.webp" alt="Silver Bracelet">
+                <h3>Gold Bangles</h3>
+                <p>Chic gold Bangles for any occasion.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr><hr><br><br><br>
+    <section class="about" id="about">
+       <center> <h2>About Us</h2></center>
+        <p id="about-text">"<strong>Chakrapani Jewellery </strong>is an elegant online platform designed to showcase exquisite jewellery crafted by skilled artisans. With over 27 years of experience, Chakrapani Jewellery specializes in creating high-quality, unique pieces that are designed to be treasured for a lifetime. The website features a curated collection of fine jewellery, including gold rings, diamond necklaces, and stunning bangles, offering a seamless browsing experience for customers.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The site uses a sophisticated yet user-friendly design, with a typewriter animation to greet visitors and a responsive layout for all devices. It also includes a language toggle feature, allowing users to switch between English and Telugu, making it accessible to a diverse audience. Whether you're shopping for a special gift or adding to your collection, Chakrapani Jewellery aims to provide an unforgettable experience. Visit the store today to explore the beauty of fine craftsmanship."</p>
+       <center><div ><button class="B" onclick="translate(event)">తెలుగులో చదవండి</button></div></center>
+    </section><br><br><br>
+    <hr><hr><br><br><br>
+<center>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please contact us at:</p>
+        <p>Email: <a href="mailto:chakrapani.valaboju@gmail.com">chakrapani.valaboju@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919866054642">+91 9866054642</a></p>
+
+    </section>
+</center><br><br><br>
+
+    <footer>
+        <p>&copy; 2025 Chakrapani Jewellery. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.querySelector(".B").addEventListener("click", translate);
+
+
+        function openringGallery() {
+            // Define the link you want to open
+            const link = "https://www.zoya.in/shop/rings?lang=en_IN"; // Replace this URL with your desired link
+            window.location.href = link; // Redirects to the link
+        }
+        
+        function openchainGallery() {
+            // Define the link you want to open
+            const link = "https://www.gondilal.com/catalogue/necklace-2950"; // Replace this URL with your desired link
+            window.location.href = link; // Redirects to the link
+        }
+
+        function openBraceletGallery() {
+            // Define the link you want to open
+            const link = "https://www.wamanharipethesons.com/ws/h/bangleskangans"; // Replace this URL with your desired link
+            window.location.href = link; // Redirects to the link
+        }
+
+        let isEnglish = true;       
+        
+        function translate(event) {
+            
+            const aboutText = document.getElementById("about-text");
+    
+            // Toggle between English and Telugu
+            if (isEnglish) {
+                // Translate to Telugu
+                aboutText.innerHTML = "<strong>చక్రపాణి జ్యువెలరీ</strong> అనేది నైపుణ్యవంతులైన కళాకారుల చేత crafted చేసిన విలక్షణమైన ఆభరణాలను ప్రదర్శించడానికి రూపొందించిన ఒక ఆకర్షణీయమైన ఆన్‌లైన్ ప్లాట్‌ఫారమ్. 27 సంవత్సరాల అనుభవంతో, చక్రపాణి జ్యువెలరీ అనేది అత్యుత్తమ, ప్రత్యేకమైన ఆభరణాలను సృష్టించడంలో నిపుణులై, వాటిని జీవాంతం చెలామణి చేయడానికి రూపొందిస్తుంది. ఈ వెబ్‌సైట్‌లో ఆభరణాల ప్రత్యేకమైన సేకరణ ఉంది, ఇందులో బంగారు వజ్రాల రింగులు, వజ్రాలు ఉన్న మొఘరాలు, మరియు అద్భుతమైన బంగళ్లతో పాటు, వినియోగదారుల కోసం సమర్థమైన బ్రౌజింగ్ అనుభవాన్ని అందిస్తుంది.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;ఈ సైట్ అందమైన మరియు వినియోగదారుడు స్నేహపూర్వకమైన డిజైన్‌ను ఉపయోగిస్తుంది, ఇది సందర్శకులను సుసంపన్నతతో స్వాగతించడానికి టైప్‌రైటర్ అనిమేషన్‌ను మరియు అన్ని పరికరాలకు అనుగుణంగా స్పందించే లేఅవుట్‌ను కలిగి ఉంది. ఇది భాషను ఆంగ్లం మరియు తెలుగు మధ్య మార్చుకునే స్విచ్చింగ్ లక్షణాన్ని కూడా అందిస్తుంది, ఇది విభిన్న ప్రేక్షకులకు అందుబాటులో ఉండేలా చేస్తుంది. మీరు ప్రత్యేక బహుమతి కోసం లేదా మీ సేకరణకు జోడించడానికి శోధిస్తున్నా, చక్రపాణి జ్యువెలరీ అనేది మరచిపోలేని అనుభవాన్ని అందించడానికి లక్ష్యంగా ఉంది.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;ఈ రోజు మా అంగడిని సందర్శించి, చక్రపాణి జ్యువెలరీ యొక్క అందాన్ని అన్వేషించండి.";
+    
+                // Change button text
+                event.target.innerText = "Translate to English";
+            } else {
+                // Translate back to English
+                aboutText.innerHTML = "<strong>Chakrapani Jewellery </strong>is an elegant online platform designed to showcase exquisite jewellery crafted by skilled artisans. With over 27 years of experience, Chakrapani Jewellery specializes in creating high-quality, unique pieces that are designed to be treasured for a lifetime. The website features a curated collection of fine jewellery, including gold rings, diamond necklaces, and stunning bangles, offering a seamless browsing experience for customers.    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The site uses a sophisticated yet user-friendly design, with a typewriter animation to greet visitors and a responsive layout for all devices. It also includes a language toggle feature, allowing users to switch between English and Telugu, making it accessible to a diverse audience. Whether you're shopping for a special gift or adding to your collection, Chakrapani Jewellery aims to provide an unforgettable experience. Visit the store today to explore the beauty of fine craftsmanship.";
+
+                // Change button text
+                event.target.innerText = "Translate to Telugu";
+            }
+    
+            // Toggle the language state
+            isEnglish = !isEnglish;
+        }
+    </script>
+    
+</body>
+</html>
